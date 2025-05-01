@@ -43,15 +43,15 @@ c-- blanklist = 149; 405-149 = 256(8x32) or 260(10*26) or 264(12x22)
 c-- new bathy = 149-3+14=160; 405-160 = 245 or 248(8x31) or 250(10*25) or 252(12x21) or 260 (13x20)
 c
       PARAMETER (
-     &           sNx =  90,
-     &           sNy =  75,
-     &           OLx =   4,
-     &           OLy =   4,
+     &           sNx =  60,
+     &           sNy =  60,
+     &           OLx =   8,
+     &           OLy =   8,
      &           nSx =   1,
      &           nSy =   1,
 C-- without blank list: nPx = 4; 
 C-- with blank list: nPx = 4; 
-     &           nPx =   4,
+     &           nPx =   354,
      &           nPy =   1,
      &           Nx  = sNx*nSx*nPx,
      &           Ny  = sNy*nSy*nPy,
