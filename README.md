@@ -32,7 +32,7 @@ netCDF-Fortran/4.4.4-foss-2018b
 - Compile the model using:
 /Data/gfi/users/kih012/MITgcm_c67/MITgcm/tools/genmake2 -mods /Data/gfi/users/kih012/MITgcm_c67/SetupsRita/TEST_EXP_NA_180x150/code_TEST_EXP_NA_180x150 -optfile /Data/gfi/users/kih012/MITgcm_c67/MITgcm/tools/build_options/linux_ia32_gfortran+mpi_fc_lam -rootdir /Data/gfi/users/kih012/MITgcm_c67/MITgcm/ -mpi
 
-make depend
+make depend\
 make
 
 - Confirm that mitgcmuv was created and compilation finished without errors.
