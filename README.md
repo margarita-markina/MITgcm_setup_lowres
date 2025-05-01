@@ -18,10 +18,9 @@ nPx = 4
 nPy = 1
 
 - Go to the build directory:
-/Data/gfi/users/kih012/MITgcm_c67/SetupsRita/TEST_EXP_NA_180x150/build_TEST_EXP_NA_180x150
+/home/.../build_TEST_EXP_NA_180x150
 
-- Delete everything in the build directory (make sure you're in the correct path):
-rm *
+- Clean up the build directory (if there have been previous attempts of compilation):
 
 - Load the required module:
 module load OpenMPI/4.0.3-GCC-9.3.0
@@ -30,7 +29,7 @@ Do NOT load:
 netCDF-Fortran/4.4.4-foss-2018b
 
 - Compile the model using:
-/Data/gfi/users/kih012/MITgcm_c67/MITgcm/tools/genmake2 -mods /Data/gfi/users/kih012/MITgcm_c67/SetupsRita/TEST_EXP_NA_180x150/code_TEST_EXP_NA_180x150 -optfile /Data/gfi/users/kih012/MITgcm_c67/MITgcm/tools/build_options/linux_ia32_gfortran+mpi_fc_lam -rootdir /Data/gfi/users/kih012/MITgcm_c67/MITgcm/ -mpi
+/home/.../MITgcm_c67/MITgcm/tools/genmake2 -mods /home/.../MITgcm_c67/mysetups/NA_180x150/code_NA_180x150 -optfile /home/.../MITgcm_c67/MITgcm/tools/build_options/linux_ia32_gfortran+mpi_fc_lam -rootdir /home/.../MITgcm_c67/MITgcm/ -mpi
 
 make depend\
 make
@@ -41,7 +40,7 @@ make
 ## To run the model:
 
 - Go to the run directory:
-/Data/gfi/work/kih012/MITgcm_c67/TEST_EXP_NA_180x150/run_TEST_EXP_NA_180x150
+/work/.../MITgcm_c67/mysetups/NA_180x150/run_NA_180x150
 
 - Ensure the run directory contains all relevant data* and eedata files, and symbolic links to the input_binary files.
 
@@ -49,10 +48,7 @@ make
 mkdir diags
 
 - Copy mitgcmuv from build directory:
-cp /Data/gfi/users/kih012/MITgcm_c67/SetupsRita/TEST_EXP_NA_180x150/build_TEST_EXP_NA_180x150/mitgcmuv .
-
-Alternatively:
-cp $MITHOME/SetupsRita/TEST_EXP_NA_180x150/build_TEST_EXP_NA_180x150/mitgcmuv .
+cp /home/.../MITgcm_c67/mysetups/NA_180x150/build_NA_180x150/mitgcmuv .
 
 - Run the model:
 mpirun -np 4 ./mitgcmuv
