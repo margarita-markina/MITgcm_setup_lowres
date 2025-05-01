@@ -1,11 +1,11 @@
-## MITgcm Low-Resolution North Atlantic (180x150) Setup on Cyclone 
+# MITgcm Low-Resolution North Atlantic (180x150) Setup on Cyclone 
 
 This configuration compiles and runs successfully on Cyclone at the University of Bergen (as of 2025-04-30).
 At present, the model is run using mpirun, as SLURM is not installed on the system.
 
 To compile it, we applied minor changes to packages.conf and SIZE.h (e.g., removal of stray END-OF_LINE markers).
 
-# Steps to successfully compile the model on Cyclone:
+## Steps to successfully compile the model on Cyclone:
 
 - Copied packages.conf from the high-resolution code directory to the low-resolution code directory.
 
@@ -38,7 +38,7 @@ make
 - Confirmed that mitgcmuv was created and compilation finished without errors.
 
 
-# To run the model:
+## To run the model:
 
 - Go to the run directory:
 /Data/gfi/work/kih012/MITgcm_c67/TEST_EXP_NA_180x150/run_TEST_EXP_NA_180x150
