@@ -15,7 +15,7 @@ ny = 75\
 nSx = 1\
 nSy = 1\
 nPx = 4\
-nPy = 1\
+nPy = 1
 
 - Go to the build directory:
 /home/.../build_TEST_EXP_NA_180x150
