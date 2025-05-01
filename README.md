@@ -7,9 +7,9 @@ To compile it, we applied minor changes to packages.conf and SIZE.h (e.g., remov
 
 ## Steps to successfully compile the model on Cyclone:
 
-- Copied packages.conf from the high-resolution code directory to the low-resolution code directory.
+- Copy packages.conf from the high-resolution code directory to the low-resolution code directory.
 
-- Changed SIZE.h to: 
+- Change SIZE.h to: 
 nx = 90
 ny = 75
 nSx = 1
@@ -17,25 +17,25 @@ nSy = 1
 nPx = 4
 nPy = 1
 
-- Went to the build directory:
+- Go to the build directory:
 /Data/gfi/users/kih012/MITgcm_c67/SetupsRita/TEST_EXP_NA_180x150/build_TEST_EXP_NA_180x150
 
-- Deleted everything in the build directory (make sure you're in the correct path):
+- Delete everything in the build directory (make sure you're in the correct path):
 rm *
 
-- Loaded the required module:
+- Load the required module:
 module load OpenMPI/4.0.3-GCC-9.3.0
 
 Do NOT load:
 netCDF-Fortran/4.4.4-foss-2018b
 
-- Compiled the model using:
+- Compile the model using:
 /Data/gfi/users/kih012/MITgcm_c67/MITgcm/tools/genmake2 -mods /Data/gfi/users/kih012/MITgcm_c67/SetupsRita/TEST_EXP_NA_180x150/code_TEST_EXP_NA_180x150 -optfile /Data/gfi/users/kih012/MITgcm_c67/MITgcm/tools/build_options/linux_ia32_gfortran+mpi_fc_lam -rootdir /Data/gfi/users/kih012/MITgcm_c67/MITgcm/ -mpi
 
 make depend
 make
 
-- Confirmed that mitgcmuv was created and compilation finished without errors.
+- Confirm that mitgcmuv was created and compilation finished without errors.
 
 
 ## To run the model:
