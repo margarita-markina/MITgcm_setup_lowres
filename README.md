@@ -3,7 +3,7 @@
 This configuration compiles and runs successfully on Cyclone at the University of Bergen (as of 2025-04-30).
 At present, the model is run using mpirun, as SLURM is not installed on the system.
 
-To compile it, we applied minor changes to packages.conf and SIZE.h (e.g., removal of stray END-OF_LINE markers).
+To compile it, we applied minor changes to packages.conf and SIZE.h (e.g., removed stray END-OF_LINE markers).
 
 ## Steps to successfully compile the model on Cyclone:
 
