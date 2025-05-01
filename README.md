@@ -9,18 +9,18 @@ To compile it, we applied minor changes to packages.conf and SIZE.h (e.g., remov
 
 - Copy packages.conf from the high-resolution code directory to the low-resolution code directory.
 
-- Change SIZE.h to: 
-nx = 90
-ny = 75
-nSx = 1
-nSy = 1
-nPx = 4
-nPy = 1
+- Set the following in SIZE.h: \
+nx = 90\
+ny = 75\
+nSx = 1\
+nSy = 1\
+nPx = 4\
+nPy = 1\
 
 - Go to the build directory:
 /home/.../build_TEST_EXP_NA_180x150
 
-- Clean up the build directory (if there have been previous attempts of compilation):
+- Clean up the build directory (if there were previous compilation attempts)
 
 - Load the required module:
 module load OpenMPI/4.0.3-GCC-9.3.0
