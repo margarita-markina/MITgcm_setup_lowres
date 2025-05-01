@@ -1,0 +1,41 @@
+ &diagnostics_list
+#   dumpatlast = .TRUE.,
+#  frequency(1) = 432000.0,
+  frequency(1) = 300.0,
+   fields(1:2,1) = 'THETA   ','SALT    ',
+   filename(1) = 'diags/state_3d_monthly',
+#  
+  frequency(2) = 432000.0,
+   fields(1:2,2) = 'UVELMASS','VVELMASS',
+   filename(2) = 'diags/trsp_3d_monthly',
+#
+  frequency(3) = 432000.0,
+   fields(1:17,3) = 'ETAN    ','oceQnet ','oceFWflx',
+                    'oceTAUX ','oceTAUY ','MXLDEPTH',
+                    'SIarea  ','SIheff  ','SIhsnow ',
+                    'PHIBOT  ','SIuice  ','SIvice  ',
+
+   filename(3) = 'diags/state_2d_monthly',
+#
+  frequency(4) = 432000.0,
+   fields(1:19,4) ='EXFpreci','EXFevap ','EXFroff ','EXFempmr',
+                   'EXFswdn ','EXFlwdn ','EXFswnet','EXFlwnet','EXFqnet ',
+                   'EXFatemp','EXFaqh  ','EXFtaux ','EXFtauy ',
+                   'EXFuwind','EXFvwind','EXFpress','EXFhs   ','EXFhl   ',
+                   'EXFsnow ',
+   filename(4) = 'diags/exf_zflux_monthly',
+
+#  frequency(5) = 432000.0,
+#   fields(1:4,5) ='ADVx_TH','ADVy_TH','DFxE_TH','DFyE_TH',
+#
+#   filename(5) = 'diags/heat_transport_monthly',
+#
+#  frequency(6) = 432000.0,
+#   fields(1:4,6) ='ADVx_SLT','ADVy_SLT','DFxE_SLT','DFyE_SLT',
+
+#   filename(6) = 'diags/salt_transport_monthly',
+
+
+ /
+ &DIAG_STATIS_PARMS
+ /

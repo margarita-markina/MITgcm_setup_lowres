@@ -1,0 +1,13 @@
+# Packages
+ &PACKAGES
+ useOBCS        = .TRUE.,
+ useEXF         = .TRUE.,
+ useGMREDI      = .FALSE.,
+ useCAL         = .TRUE.,
+ useKPP         = .TRUE.,
+ useDiagnostics = .TRUE.,
+ useProfiles    = .FALSE.,
+ useTIDES       = .FALSE.,
+ useSEAICE      = .TRUE.,
+#### useDEBUG       = .TRUE.,
+ /
